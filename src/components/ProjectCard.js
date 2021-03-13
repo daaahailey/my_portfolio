@@ -14,12 +14,22 @@ const ProjectCard = (props) => {
           <p className="project-tech">{props.tech}</p>
           <div className="btns">
             <button className="see-project-btns">
-              <a href={props.live} target="_blank" rel="noreferrer">
+              <a
+                className="btn-text"
+                href={props.live}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Live
               </a>
             </button>
             <button className="see-project-btns">
-              <a href={props.code} target="_blank" rel="noreferrer">
+              <a
+                className="btn-text"
+                href={props.code}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Code
               </a>
             </button>

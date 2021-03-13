@@ -4,7 +4,7 @@ const Contact = () => {
     return (
       <div
         className="contact-container"
-        style={{ margin: "15%", fontFamily: "Heebo" }}
+        style={{ margin: "15% 0 0 0", fontFamily: "Heebo" }}
       >
         <div className="contact-text" style={{ margin: "5%" }}>
           <h1>Get In Touch</h1>
@@ -30,6 +30,9 @@ const Contact = () => {
         <a href={`mailto:daaahailey@gmail.com`}>
           <button>Say Hello!</button>
         </a>
+        <div className="footer" style={{marginTop: "10%"}}>
+          <p className="footer-text">Designed and built by <a href="https://github.com/daaahailey/my_portfolio" style={{textDecoration: "none", fontWeight: "500"}}>Dahye Ji</a></p>
+        </div>
       </div>
     );
 }
