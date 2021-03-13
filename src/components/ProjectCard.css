@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.project-cards {
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    margin: 10% 0;
+}
+
+.project-cards:nth-child(1) {
+    margin-top: 2%;
+}
+
+.project-preview {
+    width: 400px;
+    margin-right: 10%;
+}
+.project-preview img {
+    width: 100%;
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
+.project-info {
+    width:  450px;
+}
+
+.project-title {
+    font-size: 2em;
+}
+
+.project-description {
+    font-size: 1em;
+}
+
+.see-project-btns {
+    margin: 5px;
+    width: 60px;
+    height: 30px;
+    font-size: 1em;
+}

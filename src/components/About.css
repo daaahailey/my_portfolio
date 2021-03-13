@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    padding-top: 5%;
+}
+.about-me-text-container {
+    text-align: left;
+    margin: 0 auto;
+    /* letter-spacing: 0.5px; */
+    /* text-align: justify; */
+}
+
+.about-me {
+    margin: 0 auto;
+    width: 74%;
+}
+.about-me h1 {
+    text-align: left;
+}
+
+.about-me-text-container {
+    width: 74%;
+}
+.about-me-text {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin: 24px 0;
+}
+
+.about-me-text.tech {
+    margin-bottom: 0;
+}
+
+.tech-list {
+    margin: 20px;
+    padding-left: 5px;
+}
+li.tech-use {
+    list-style: none;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.6em;
+
+}
+
+/* .tech-use:last-child {
+    margin-left: 15px;
+  
+} */

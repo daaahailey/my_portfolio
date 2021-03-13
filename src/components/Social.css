@@ -1,0 +1,13 @@
+
+.social-icons li h1 {
+    color: black;
+    transition: color 0.5s;
+}
+
+.social-icons li h1:visited {
+   color: black;
+}
+
+.social-icons li h1:hover {
+    color: #46fff6;
+}
