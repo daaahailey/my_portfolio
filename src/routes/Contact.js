@@ -3,10 +3,14 @@ import React from "react";
 const Contact = () => {
     return (
       <div
-        className="contact-container"
-        style={{ margin: "15% 0 0 0", fontFamily: "Heebo" }}
+        className="contact-container" 
+        style={{ fontFamily: "Heebo",
+    alignItems: "center",
+     display: "flex",
+    justifyContent: "center", flexDirection: "column", marginTop: "5%"}}
       >
-        <div className="contact-text" style={{ margin: "5%" }}>
+        <div className="contact-text" style={{ margin: "5%", display: "flex",
+    flexDirection: "column", alignItems: "center" }}>
           <h1>Get In Touch</h1>
           <h2 style={{ fontWeight: "400" }}>
             I'm open to job and project opportunities :)

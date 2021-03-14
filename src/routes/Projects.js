@@ -4,6 +4,7 @@ import Calculator from "../project-img/calculator.gif";
 import ToDo from "../project-img/to_do_list.gif";
 import Ecommerce from "../project-img/ecommerce.png";
 import Mybar from "../project-img/my_bar.png";
+import MyWeb from "../project-img/my_website.png";
 import Makeup from "../project-img/makeup_artist.png";
 
 const Projects = () => {
@@ -27,23 +28,25 @@ const Projects = () => {
           style={{ width: "74%", margin: "0 auto", textAlign: "left" }}
         >
           <ProjectCard
+            title="Makeup Artist's Website"
+            description="Website built for a makeup artist. Showcasing her previous work for future clients."
+            tech="React, CSS"
+            img={Makeup}
+          />
+          <ProjectCard
             title="Portfolio"
             description="My portfolio website. Yes, this is the website you are currently looking at. Since I've been learning React lately. I tried to code in React."
             tech="React, CSS"
-            // img={Makeup}
-          />
-          <ProjectCard
-            title="Makeup Artist's Website"
-            description="Website built for a makeup artist. Showcasing her previous work for future clients"
-            tech="React, CSS"
-            img={Makeup}
+            img={MyWeb}
+            live={"https://daaahailey.github.io/my_portfolio"}
+            code={"https://github.com/daaahailey/my_portfolio"}
           />
           <ProjectCard
             title="My Bar"
             description="Cocktail recipe app built with React using API.
             There are recipes of gin based cocktail. You can scroll to discover recipes or search name on the app to find the recipe.
             First app I built with React. I made this to learn to get data from API and play with it.
-            It was also first time that I used router to display different pages."
+            It was also first time that I used router to display different sections."
             tech="React, CSS"
             img={Mybar}
             live={"https://daaahailey.github.io/my_bar"}
@@ -79,7 +82,8 @@ const Projects = () => {
           />
           <ProjectCard
             title="Calculator"
-            description="Calculator made with Vanilla JS. It has basic functionality of calculation(+,-,*,/) and can calculate multiple numbers."
+            description="Calculator made with Vanilla JS. It has basic functionality of calculation(+,-,*,/) and can calculate multiple numbers.
+            I made this to see how I can actually use JavaScript that I learned and how to use the functions."
             tech="JavaScript, CSS, HTML"
             img={Calculator}
             live={"https://daaahailey.github.io/Calculator/"}

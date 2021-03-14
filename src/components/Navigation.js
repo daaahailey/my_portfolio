@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../img/logo.png";
 import "./Navigation.css";
 
@@ -7,23 +7,31 @@ const Navigation = () => {
     return (
       <div className="nav-div">
         <div className="logo">
-          <Link to="/">
+          <NavLink to="/">
             <img className="logo-img" src={logo} alt="logo" />
-          </Link>
+          </NavLink>
         </div>
         <div className="nav-container">
-          <Link to="/" className="nav-list">
+          <NavLink to="/" activeClassName="is-active" className="nav-list" exact>
             Home <span className="hover-line"></span>
-          </Link>
-          <Link to="/about" className="nav-list">
+          </NavLink>
+          <NavLink to="/about" activeClassName="is-active" className="nav-list">
             About Me <span className="hover-line"></span>
-          </Link>
-          <Link to="/projects" className="nav-list">
+          </NavLink>
+          <NavLink
+            to="/projects"
+            activeClassName="is-active"
+            className="nav-list"
+          >
             Projects <span className="hover-line"></span>
-          </Link>
-          <Link to="/contact" className="nav-list">
+          </NavLink>
+          <NavLink
+            to="/contact"
+            activeClassName="is-active"
+            className="nav-list"
+          >
             Contact <span className="hover-line"></span>
-          </Link>
+          </NavLink>
         </div>
       </div>
     );

@@ -21,9 +21,9 @@ const Main = () => {
           </div>
           <div className="btn-container">
             <Link to="/projects">
-              <button>View Projects</button>
+              <button className="rainbow-border">View Projects</button>
             </Link>
-            <button>Get In Touch</button>
+            <button className="rainbow-border">Get In Touch</button>
           </div>
         </div>
       </div>
