@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.0d3b7ed4.chunk.css",
-    "main.js": "/my_portfolio/static/js/main.f470ea95.chunk.js",
-    "main.js.map": "/my_portfolio/static/js/main.f470ea95.chunk.js.map",
-    "runtime-main.js": "/my_portfolio/static/js/runtime-main.6f1905b2.js",
-    "runtime-main.js.map": "/my_portfolio/static/js/runtime-main.6f1905b2.js.map",
-    "static/js/2.3d57aa00.chunk.js": "/my_portfolio/static/js/2.3d57aa00.chunk.js",
-    "static/js/2.3d57aa00.chunk.js.map": "/my_portfolio/static/js/2.3d57aa00.chunk.js.map",
-    "static/js/3.9cf9bfc7.chunk.js": "/my_portfolio/static/js/3.9cf9bfc7.chunk.js",
-    "static/js/3.9cf9bfc7.chunk.js.map": "/my_portfolio/static/js/3.9cf9bfc7.chunk.js.map",
+    "main.css": "/my_portfolio/static/css/main.3af5a72b.chunk.css",
+    "main.js": "/my_portfolio/static/js/main.0e5cb87f.chunk.js",
+    "main.js.map": "/my_portfolio/static/js/main.0e5cb87f.chunk.js.map",
+    "runtime-main.js": "/my_portfolio/static/js/runtime-main.154640fa.js",
+    "runtime-main.js.map": "/my_portfolio/static/js/runtime-main.154640fa.js.map",
+    "static/js/2.2c67343a.chunk.js": "/my_portfolio/static/js/2.2c67343a.chunk.js",
+    "static/js/2.2c67343a.chunk.js.map": "/my_portfolio/static/js/2.2c67343a.chunk.js.map",
     "index.html": "/my_portfolio/index.html",
-    "static/css/main.0d3b7ed4.chunk.css.map": "/my_portfolio/static/css/main.0d3b7ed4.chunk.css.map",
-    "static/js/2.3d57aa00.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.3d57aa00.chunk.js.LICENSE.txt",
+    "static/css/main.3af5a72b.chunk.css.map": "/my_portfolio/static/css/main.3af5a72b.chunk.css.map",
+    "static/js/2.2c67343a.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.2c67343a.chunk.js.LICENSE.txt",
     "static/media/calculator.acae2920.gif": "/my_portfolio/static/media/calculator.acae2920.gif",
     "static/media/ecommerce.7797def7.png": "/my_portfolio/static/media/ecommerce.7797def7.png",
     "static/media/logo.bfd0793d.png": "/my_portfolio/static/media/logo.bfd0793d.png",
     "static/media/makeup_artist.3e96d396.png": "/my_portfolio/static/media/makeup_artist.3e96d396.png",
     "static/media/my_bar.036940d6.png": "/my_portfolio/static/media/my_bar.036940d6.png",
+    "static/media/my_website.e12d3a1d.png": "/my_portfolio/static/media/my_website.e12d3a1d.png",
     "static/media/to_do_list.b78f1502.gif": "/my_portfolio/static/media/to_do_list.b78f1502.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.6f1905b2.js",
-    "static/js/2.3d57aa00.chunk.js",
-    "static/css/main.0d3b7ed4.chunk.css",
-    "static/js/main.f470ea95.chunk.js"
+    "static/js/runtime-main.154640fa.js",
+    "static/js/2.2c67343a.chunk.js",
+    "static/css/main.3af5a72b.chunk.css",
+    "static/js/main.0e5cb87f.chunk.js"
   ]
 }
