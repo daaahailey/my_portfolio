@@ -1,19 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../img/logo.png";
-
 import "./Navigation.css";
 
 const Navigation = () => {
     return (
       <div className="nav-div">
         <div className="logo">
-          <img className="logo-img" src={logo} alt="logo" />
+          <Link to="/">
+            <img className="logo-img" src={logo} alt="logo" />
+          </Link>
         </div>
-        <ul className="nav-container">
-          <li className="nav-list">About Me</li>
-          <li className="nav-list">Projects</li>
-          <li className="nav-list">Contact</li>
-        </ul>
+        <div className="nav-container">
+          <Link to="/" className="nav-list">
+            Home <span className="hover-line"></span>
+          </Link>
+          <Link to="/about" className="nav-list">
+            About Me <span className="hover-line"></span>
+          </Link>
+          <Link to="/projects" className="nav-list">
+            Projects <span className="hover-line"></span>
+          </Link>
+          <Link to="/contact" className="nav-list">
+            Contact <span className="hover-line"></span>
+          </Link>
+        </div>
       </div>
     );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Main.css";
 
 const Main = () => {
@@ -9,15 +10,19 @@ const Main = () => {
             <h3>Hello, I'm</h3>
             <h1 className="my-name">Dahye Ji</h1>
             <h3>
-              a self-taught <span className="front-end">Front End Developer</span> based in
+              a self-taught{" "}
+              <span className="front-end">Front End Developer</span> based in
               London.
             </h3>
             <h5>
-              During this pandemic, I started programming and decided to change my career :)
+              During this pandemic, I started programming and decided to change
+              my career :)
             </h5>
           </div>
           <div className="btn-container">
-            <button>View Projects</button>
+            <Link to="/projects">
+              <button>View Projects</button>
+            </Link>
             <button>Get In Touch</button>
           </div>
         </div>

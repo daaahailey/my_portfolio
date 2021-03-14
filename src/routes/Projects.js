@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 import Calculator from "../project-img/calculator.gif";
 import ToDo from "../project-img/to_do_list.gif";
 import Ecommerce from "../project-img/ecommerce.png";

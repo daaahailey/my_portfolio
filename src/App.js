@@ -1,22 +1,29 @@
 // import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Social from "./components/Social"
-import Main from "./components/Main";
-import About from "./components/About";
-import Projects from "./components/Projects"
-import Contact from "./components/Contact";
-
+import Main from "./routes/Main";
+import About from "./routes/About";
+import Projects from "./routes/Projects"
+import Contact from "./routes/Contact";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Social />
-      <Main />
-      <About />
-      <Projects />
-      <Contact />
+      <BrowserRouter>
+        <div>
+          <Navigation />
+          <Social />
+          <Switch>
+            <Route exact path="/" component={Main} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
