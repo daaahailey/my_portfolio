@@ -20,10 +20,10 @@ const Main = () => {
             </h5>
           </div>
           <div className="btn-container">
-            <Link to="/projects">
-              <button className="rainbow-border">View Projects</button>
+            <Link to="/my_portfolio/projects">
+              <button>View Projects</button>
             </Link>
-            <button className="rainbow-border">Get In Touch</button>
+            <button><a className="btnForEmail" href={`mailto:daaahailey@gmail.com`}>Get In Touch</a></button>
           </div>
         </div>
       </div>

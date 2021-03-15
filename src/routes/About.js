@@ -1,9 +1,34 @@
 import React from "react";
+import ProfilePic from "../img/profile_pic.jpg";
+import LaptopImg from "../img/laptop.svg"
 import "./About.css";
+// import { FaLanguage } from "react-icons/fa";
 
 const About = () => {
     return (
       <div className="about-container">
+        <div className="profile-top">
+          <div className="profile-card">
+            <div className="profile-box">
+              <img className="profile-pic" src={ProfilePic} alt="profile-pic" />
+              <div className="profile-card-text">
+                <h1>Dahye Ji</h1>
+                <h3 style={{ marginTop: "0" }}>
+                  <span style={{ marginRight: "2px" }}>👩🏻‍💻</span> Front-End
+                  Developer
+                </h3>
+                <p>Lives in London</p>
+                <p>Skills: HTML/CSS/SASS/JavaScript/React</p>
+                <p>Speaks English, Korean</p>
+              </div>
+            </div>
+            <a className="btnForEmail" href={`mailto:daaahailey@gmail.com`}>
+              <div className="profile-contact-btn">
+                <h2 className="profile-btn-text">Contact Me</h2>
+              </div>
+            </a>
+          </div>
+        </div>
         <div className="about-me">
           <h1>About Me</h1>
         </div>
@@ -77,6 +102,21 @@ const About = () => {
               daaahailey@gamil.com
             </a>
           </p>
+          <p className="about-me-text">
+            <span>+ A few random facts about me.</span>
+            <span>
+              1. I used to be a fashion blogger and often went to interview
+              designers.
+            </span>
+            <span>
+              2. I met one of best friends from MySpace and we’ve been friends
+              since. (For those who remember that platform…)
+            </span>
+            <span>
+              3. I have lived in 🇰🇷🇬🇧🇮🇪 and been to 🇫🇷🇧🇪🇳🇱🇸🇪🇪🇸🇨🇭🇯🇵🇸🇬🇻🇳🇵🇭 so far.
+            </span>
+          </p>
+          <img className="laptop-img" src={LaptopImg} alt="laptop-img" />
         </div>
       </div>
     );

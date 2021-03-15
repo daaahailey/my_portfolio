@@ -7,26 +7,35 @@ const Navigation = () => {
     return (
       <div className="nav-div">
         <div className="logo">
-          <NavLink to="/">
+          <NavLink to="/my_portfolio/">
             <img className="logo-img" src={logo} alt="logo" />
           </NavLink>
         </div>
         <div className="nav-container">
-          <NavLink to="/" activeClassName="is-active" className="nav-list" exact>
+          <NavLink
+            to="/my_portfolio/"
+            activeClassName="is-active"
+            className="nav-list"
+            exact
+          >
             Home <span className="hover-line"></span>
           </NavLink>
-          <NavLink to="/about" activeClassName="is-active" className="nav-list">
+          <NavLink
+            to="/my_portfolio/about"
+            activeClassName="is-active"
+            className="nav-list"
+          >
             About Me <span className="hover-line"></span>
           </NavLink>
           <NavLink
-            to="/projects"
+            to="/my_portfolio/projects"
             activeClassName="is-active"
             className="nav-list"
           >
             Projects <span className="hover-line"></span>
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/my_portfolio/contact"
             activeClassName="is-active"
             className="nav-list"
           >
