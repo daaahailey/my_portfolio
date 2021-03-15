@@ -5,7 +5,7 @@ import "./Social.css"
  
 const Social = () => {
     return (
-      <div className="social-handle" style={{ position: "fixed" }}>
+      <div className="social-handle">
         <ul
           className="social-icons"
           style={{

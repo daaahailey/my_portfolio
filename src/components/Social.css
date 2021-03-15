@@ -1,3 +1,9 @@
+.social-handle {
+    position: fixed;
+    padding: 0;
+    margin-left: 15px;
+}
+
 
 .social-icons li h1 {
     color: black;

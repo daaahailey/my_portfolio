@@ -44,7 +44,7 @@ const Projects = () => {
           <ProjectCard
             title="My Bar"
             description="Cocktail recipe app built with React using API.
-            There are recipes of gin based cocktail. You can scroll to discover recipes or search name on the app to find the recipe.
+            There are recipes of gin based cocktails. You can scroll to discover recipes or search name on the app to find the recipe.
             First app I built with React. I made this to learn to get data from API and play with it.
             It was also first time that I used router to display different sections."
             tech="React, CSS"
@@ -61,7 +61,7 @@ const Projects = () => {
             You can search items by color, category and price range using 'Filter By' menu on left side on shop page.
             Products can be sorted in three ways: Default(Best Match), Price: highest first, Price: lowest first.
             Clicking the Add to basket button will update the cart icon in the top right of the page to show the number of products in the cart.
-            Products in the cart are stored and remembered by the browser using localStorage."
+            Products in the cart are stored and remembered by the browser using local storage."
             tech="JavaScript, SASS, HTML"
             img={Ecommerce}
             live={"https://daaahailey.github.io/E-Commerce-Website/"}

@@ -103,17 +103,17 @@ const About = () => {
             </a>
           </p>
           <p className="about-me-text">
-            <span>+ A few random facts about me.</span>
+            <span>🙂 A few random facts about me.</span>
             <span>
-              1. I used to be a fashion blogger and often went to interview
+              - I used to be a fashion blogger and often went to interview
               designers.
             </span>
             <span>
-              2. I met one of best friends from MySpace and we’ve been friends
+              - I met one of best friends from MySpace and we’ve been friends
               since. (For those who remember that platform…)
             </span>
             <span>
-              3. I have lived in 🇰🇷🇬🇧🇮🇪 and been to 🇫🇷🇧🇪🇳🇱🇸🇪🇪🇸🇨🇭🇯🇵🇸🇬🇻🇳🇵🇭 so far.
+              - I have lived in 🇰🇷🇬🇧🇮🇪 and been to 🇫🇷🇧🇪🇳🇱🇸🇪🇪🇸🇨🇭🇯🇵🇸🇬🇻🇳🇵🇭 so far.
             </span>
           </p>
           <img className="laptop-img" src={LaptopImg} alt="laptop-img" />
