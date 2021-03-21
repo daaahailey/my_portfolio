@@ -1,17 +1,120 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { withRouter , NavLink } from "react-router-dom";
+import HamburgerMenu from "./HamburgerMenu";
+import styled from "styled-components";
 import logo from "../img/logo.png";
 import "./Navigation.css";
 
-const Navigation = () => {
+
+
+const MenuBtn = styled.button`
+  position: fixed;
+  top: 10px;
+  right: 5px;
+  margin: 0;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.8em;
+  color: black;
+  box-shadow: none;
+  z-index: 1;
+
+  @media (min-width: 900px) {
+    display: none;
+  }
+
+  &:hover {
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    transform: none;
+  }
+  &:active {
+    transform: none;
+  }
+`;
+
+const NavMenu = styled.div`
+  @media (max-width: 900px) {
+    display: none;
+  }
+`;
+
+
+const Navigation = ({ history }) => {
+
+  // state for hamburger menu
+  const [hamActive, setHamActive] = useState({
+    initial: false,
+    clicked: null,
+    menuName: "Menu",
+  });
+  // state for disabled button 
+  const [disabled, setDisabled] = useState(false);
+  
+  // use effect for page changes 
+  useEffect(() => {
+    history.listen(() => {
+      setHamActive({
+        clicked: false,
+        menuName: "Menu"
+      })
+    })
+  });
+
+  const handleMenu = () => {
+    disableMenu();
+    if (hamActive.initial === false) {
+      setHamActive({
+        initial: null,
+        clicked: true,
+        menuName: "Close",
+      }); // need this for animation
+      // console.log("hamActive, first");
+    } else if (hamActive.clicked === true) {
+      setHamActive({
+        clicked: !hamActive.clicked,
+        menuName: "Menu",
+      });
+      // console.log("hamNotActive");
+    } else if (hamActive.clicked === false) {
+      setHamActive({
+        clicked: !hamActive.clicked,
+        menuName: "Close",
+      });
+      // console.log("hamActive");
+    }
+  };
+
+  // Determine if the menu button should be disabled.
+
+  const disableMenu = () => {
+    setDisabled(!disabled);
+    setTimeout(() => {
+      setDisabled(false);
+    }, 1000);
+  };
+
+
+
     return (
-      <div className="nav-div">
+      <div className="nav-div-container">
         <div className="logo">
           <NavLink to="/my_portfolio/">
             <img className="logo-img" src={logo} alt="logo" />
           </NavLink>
         </div>
-        <div className="nav-container">
+        <div className="hamburger-menu">
+          <MenuBtn disabled={disabled} onClick={handleMenu}>
+            {hamActive.menuName}
+          </MenuBtn>
+          <HamburgerMenu state={hamActive} />
+        </div>
+        <NavMenu className="list-container" style={{ zIndex: "1" }}>
           <NavLink
             to="/my_portfolio/"
             activeClassName="is-active"
@@ -41,9 +144,9 @@ const Navigation = () => {
           >
             Contact <span className="hover-line"></span>
           </NavLink>
-        </div>
+        </NavMenu>
       </div>
     );
 }
 
-export default Navigation;
+export default withRouter(Navigation);

@@ -2,6 +2,7 @@
     position: fixed;
     padding: 0;
     margin-left: 15px;
+    z-index: -1;
 }
 
 

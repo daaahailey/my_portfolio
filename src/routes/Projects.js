@@ -15,9 +15,9 @@ const Projects = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          margin: "10%",
+          margin: "7% 10%",
           paddingTop: "5%",
-          backgroundColor: "aliceblue",
+          backgroundColor: "#e7e2ff",
         }}
       >
         <div className="projects" style={{ margin: "0 auto", width: "74%" }}>
@@ -42,7 +42,7 @@ const Projects = () => {
             code={"https://github.com/daaahailey/my_portfolio"}
           />
           <ProjectCard
-            title="My Bar"
+            title="My Bar - Cocktail Recipe App"
             description="Cocktail recipe app built with React using API.
             There are recipes of gin based cocktails. You can scroll to discover recipes or search name on the app to find the recipe.
             First app I built with React. I made this to learn to get data from API and play with it.

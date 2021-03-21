@@ -42,9 +42,7 @@ const Contact = () => {
                   fontWeight: "500",
                   color: "#7f00e0",
                 }}
-              >
-                GitHub
-              </a>
+              > GitHub</a>
             </p>
             <a href={`mailto:daaahailey@gmail.com`} style={{ margin: "10%" }}>
               <button>Say Hello!</button>

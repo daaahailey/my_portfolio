@@ -1,6 +1,7 @@
 import React from "react";
 import ProfilePic from "../img/profile_pic.jpg";
 import LaptopImg from "../img/laptop.svg"
+import ExploreImg from "../img/explore.svg";
 import "./About.css";
 // import { FaLanguage } from "react-icons/fa";
 
@@ -44,8 +45,8 @@ const About = () => {
             rethink my career path while I was working. But, I've always wanted
             to try things that are totally different and go outside of my
             comfort zone. So, I moved to London from Seoul in 2019 with a hope
-            to experience new things I haven’t done in my life. But after six
-            months, a global pandemic began.
+            to experience new things that I haven’t done in my life. But after
+            six months, a global pandemic began.
           </p>
           <p className="about-me-text">
             Suddenly, given tons of free time I started to consider what options
@@ -55,6 +56,7 @@ const About = () => {
             accessibility of free online resources made me feel that front-end
             development might be the answer for me.
           </p>
+          <img className="laptop-img" src={LaptopImg} alt="laptop-img" />
           <p className="about-me-text">
             I didn’t have much knowledge nor prior experience in tech and wasn’t
             sure how to start. Luckily, internet has been my best friend. I
@@ -110,13 +112,14 @@ const About = () => {
             </span>
             <span>
               - I met one of best friends from MySpace and we’ve been friends
-              since. (For those who remember that platform…)
+              since.(For those who remember that platform…)
             </span>
             <span>
-              - I have lived in 🇰🇷🇬🇧🇮🇪 and been to 🇫🇷🇧🇪🇳🇱🇸🇪🇪🇸🇨🇭🇯🇵🇸🇬🇻🇳🇵🇭 so far.
+              - I was born in 🇰🇷 have lived in 🇮🇪 now live in 🇬🇧 and have been to
+              🇫🇷🇧🇪🇳🇱🇸🇪🇪🇸🇨🇭🇯🇵🇸🇬🇻🇳🇵🇭 so far.
             </span>
           </p>
-          <img className="laptop-img" src={LaptopImg} alt="laptop-img" />
+          <img className="explore-img" src={ExploreImg} alt="explore-img" />
         </div>
       </div>
     );

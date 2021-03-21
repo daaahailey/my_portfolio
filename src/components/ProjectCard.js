@@ -4,7 +4,7 @@ import "./ProjectCard.css"
 
 const ProjectCard = (props) => {
     return (
-      <div className="project-cards" style={{ alignItems: "center" }}>
+      <div className="project-cards">
         <div className="project-preview">
           <img src={props.img} alt="project-img" />
         </div>
