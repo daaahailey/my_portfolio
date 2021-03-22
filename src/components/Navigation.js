@@ -129,8 +129,8 @@ const Navigation = ({ history }) => {
 
     return (
       <NavContainer className="nav-div-container">
-        <div className="logo" style={{ margin: "0", padding: "0"}}>
-          <NavLink to="/my_portfolio/">
+        <div className="logo" style={{ margin: "0", padding: "0" }}>
+          <NavLink to="/">
             <img className="logo-img" src={logo} alt="logo" />
           </NavLink>
         </div>
@@ -149,25 +149,13 @@ const Navigation = ({ history }) => {
           >
             Home <span className="hover-line"></span>
           </NavLink>
-          <NavLink
-            to="/about"
-            activeClassName="is-active"
-            className="nav-list"
-          >
+          <NavLink to="/about" activeClassName="is-active" className="nav-list">
             About Me <span className="hover-line"></span>
           </NavLink>
-          <NavLink
-            to="/projects"
-            activeClassName="is-active"
-            className="nav-list"
-          >
+          <NavLink to="/projects" activeClassName="is-active" className="nav-list">
             Projects <span className="hover-line"></span>
           </NavLink>
-          <NavLink
-            to="/contact"
-            activeClassName="is-active"
-            className="nav-list"
-          >
+          <NavLink to="/contact" activeClassName="is-active" className="nav-list">
             Contact <span className="hover-line"></span>
           </NavLink>
         </NavMenu>
