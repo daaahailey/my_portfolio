@@ -27,29 +27,32 @@ const ContactFooter = styled.div`
 `;
 
 const ContactH2 = styled.h2`
-  font-size:
-`
+  font-weight: 400;
+   @media (max-width: 768px) {
+  margin: 3% 0;
+   }
+`;
 
 const Contact = () => {
   return (
     <div>
       <ContactContainer className="contact-container">
         <div className="img-container">
-          <img src={Chat} alt="chat-img" />
+          <img src={Chat} alt="chat-img" style={{width: "190px", marginBottom:"10px"}}/>
         </div>
         <div
           className="contact-text"
           style={{
-            margin: "3%",
+            margin: "4%",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
           }}
         >
-          <h1>Get In Touch</h1>
-          <h2 style={{ fontWeight: "400" }}>
+          <h1 style={{margin: "3% 0"}}>Get In Touch</h1>
+          <ContactH2>
             I'm open to job and project opportunities :)
-          </h2>
+          </ContactH2>
           <p style={{ fontSize: "1.3em", margin: "0" }}>
             You can check my code on
             <a

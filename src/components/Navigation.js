@@ -51,7 +51,6 @@ const MenuBtn = styled.button`
     box-shadow: none;
     background-color: transparent;
     color: black;
-    font-weight: 500;
     transform: none;
   }
   &:active {
