@@ -170,19 +170,19 @@ const HamburgerMenu = ({ state }) => {
         <div className="container">
           <nav>
             <HamMenuList>
-              <StyledLink ref={(el) => (menu1 = el)} to="/my_portfolio/">
+              <StyledLink ref={(el) => (menu1 = el)} to="/">
                 Home
               </StyledLink>
-              <StyledLink ref={(el) => (menu2 = el)} to="/my_portfolio/about">
+              <StyledLink ref={(el) => (menu2 = el)} to="/about">
                 About
               </StyledLink>
               <StyledLink
                 ref={(el) => (menu3 = el)}
-                to="/my_portfolio/projects"
+                to="/projects"
               >
                 Projects
               </StyledLink>
-              <StyledLink ref={(el) => (menu4 = el)} to="/my_portfolio/contact">
+              <StyledLink ref={(el) => (menu4 = el)} to="/contact">
                 Contact
               </StyledLink>
             </HamMenuList>
