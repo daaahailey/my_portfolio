@@ -9,7 +9,7 @@ const FooterDiv = styled.div`
     display: block;
   }
   @media (max-width: 480px) {
-    margin-top: 10%;
+    padding-top: 5%;
   }
 `;
 

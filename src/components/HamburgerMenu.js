@@ -170,7 +170,6 @@ const HamburgerMenu = ({ state }) => {
         <div className="container">
           <nav>
             <HamMenuList>
-              {/* <GlobalStyles/> */}
               <StyledLink ref={(el) => (menu1 = el)} to="/my_portfolio/">
                 Home
               </StyledLink>

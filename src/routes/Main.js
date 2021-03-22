@@ -21,7 +21,7 @@ const Main = () => {
             </h5>
           </div>
           <div className="btn-container">
-            <Link to="/my_portfolio/projects">
+            <Link to="/projects">
               <button className="main-btns">View Projects</button>
             </Link>
             <button className="main-btns">

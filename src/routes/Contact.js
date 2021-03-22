@@ -28,9 +28,20 @@ const ContactFooter = styled.div`
 
 const ContactH2 = styled.h2`
   font-weight: 400;
-   @media (max-width: 768px) {
-  margin: 3% 0;
-   }
+  @media (max-width: 768px) {
+    margin: 3% 0;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.3em;
+  }
+`;
+
+const ContactP = styled.p`
+font-size: 1.2em;
+margin: 0;
+  @media (max-width: 480px) {
+    font-size: 1em;
+  }
 `;
 
 const Contact = () => {
@@ -38,7 +49,11 @@ const Contact = () => {
     <div>
       <ContactContainer className="contact-container">
         <div className="img-container">
-          <img src={Chat} alt="chat-img" style={{width: "190px", marginBottom:"10px"}}/>
+          <img
+            src={Chat}
+            alt="chat-img"
+            style={{ width: "190px", marginBottom: "10px" }}
+          />
         </div>
         <div
           className="contact-text"
@@ -49,11 +64,9 @@ const Contact = () => {
             alignItems: "center",
           }}
         >
-          <h1 style={{margin: "3% 0"}}>Get In Touch</h1>
-          <ContactH2>
-            I'm open to job and project opportunities :)
-          </ContactH2>
-          <p style={{ fontSize: "1.3em", margin: "0" }}>
+          <h1 style={{ margin: "3% 0" }}>Get In Touch</h1>
+          <ContactH2>I'm open to job and project opportunities :)</ContactH2>
+          <ContactP>
             You can check my code on
             <a
               href="https://github.com/daaahailey/"
@@ -68,7 +81,7 @@ const Contact = () => {
               {" "}
               GitHub
             </a>
-          </p>
+          </ContactP>
           <a href={`mailto:daaahailey@gmail.com`} style={{ margin: "10%" }}>
             <button style={{ width: "170px", height: "60px" }}>
               Say Hello!

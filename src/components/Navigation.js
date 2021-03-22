@@ -26,6 +26,7 @@ const MenuBtn = styled.button`
   top: 15px;
   right: 25px;
   width: 100px;
+  height: 40px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -38,23 +39,25 @@ const MenuBtn = styled.button`
   box-shadow: none;
   z-index: 5;
 
+  &:hover {
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+    transform: none;
+    font-weight: 600;
+  }
+
+  &:active {
+    transform: none;
+    font-weight: 600;
+  }
+
   @media (min-width: 900px) {
     display: none;
   }
   @media (max-width: 480px) {
     font-size: 1.4em;
     width: 78px;
-}
-  }
-
-  &:hover {
-    box-shadow: none;
-    background-color: transparent;
-    color: black;
-    transform: none;
-  }
-  &:active {
-    transform: none;
   }
 `;
 
@@ -139,7 +142,7 @@ const Navigation = ({ history }) => {
         </div>
         <NavMenu className="list-container" style={{ zIndex: "1" }}>
           <NavLink
-            to="/my_portfolio/"
+            to="/"
             activeClassName="is-active"
             className="nav-list"
             exact
@@ -147,21 +150,21 @@ const Navigation = ({ history }) => {
             Home <span className="hover-line"></span>
           </NavLink>
           <NavLink
-            to="/my_portfolio/about"
+            to="/about"
             activeClassName="is-active"
             className="nav-list"
           >
             About Me <span className="hover-line"></span>
           </NavLink>
           <NavLink
-            to="/my_portfolio/projects"
+            to="/projects"
             activeClassName="is-active"
             className="nav-list"
           >
             Projects <span className="hover-line"></span>
           </NavLink>
           <NavLink
-            to="/my_portfolio/contact"
+            to="/contact"
             activeClassName="is-active"
             className="nav-list"
           >

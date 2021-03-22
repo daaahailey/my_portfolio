@@ -9,6 +9,10 @@
     margin-top: 9%;    
 }
 
+.main-banner {
+  width: 100%;
+}
+
 .text-wrapper {
     display: flex;
     flex-direction: column;
@@ -122,8 +126,9 @@ button:active {
 @media (max-width: 480px) {
 
   .main-container {
-    margin: 5%;
-    height: 70vh;
+    margin: 10%;
+    padding-top: 10%;
+    height: 64vh;
   }
   .my-name {
     font-size: 3em;
@@ -134,7 +139,7 @@ button:active {
   }
 
    .text-wrapper h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
   .text-wrapper h5 {

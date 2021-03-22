@@ -13,7 +13,7 @@ const ProjectContainer = styled.div`
   flex-direction: column;
   margin: 7% 10%;
   paddingtop: 5%;
-  background-color: #e7e2ff;
+  // background-color: #e7e2ff;
 
   @media (max-width: 1000px) {
     margin: 7% 14%;

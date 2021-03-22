@@ -18,10 +18,10 @@ function App() {
           <Navigation />
           <Social />
           <Switch>
-            <Route exact path="/my_portfolio/" component={Main} />
-            <Route path="/my_portfolio/about" component={About} />
-            <Route path="/my_portfolio/projects" component={Projects} />
-            <Route path="/my_portfolio/contact" component={Contact} />
+            <Route exact path="/" component={Main} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
       </BrowserRouter>
