@@ -9,7 +9,6 @@ const About = () => {
     return (
       <div className="about-container">
         <div className="profile-top">
-          <div className="profile-card">
             <div className="profile-box">
               <img className="profile-pic" src={ProfilePic} alt="profile-pic" />
               <div className="profile-card-text">
@@ -28,7 +27,6 @@ const About = () => {
                 <h2 className="profile-btn-text">Contact Me</h2>
               </div>
             </a>
-          </div>
         </div>
         <div className="about-me">
           <h1>About Me</h1>

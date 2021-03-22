@@ -67,3 +67,25 @@
 .see-project-btns:hover .btn-text {
     color: white;
 }
+
+@media (max-width: 1000px) {
+    .project-cards {
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+    .project-preview {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .project-info h1 {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-title {
+        font-size: 1.5em;
+    }
+}
+

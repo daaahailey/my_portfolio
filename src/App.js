@@ -7,6 +7,7 @@ import Main from "./routes/Main";
 import About from "./routes/About";
 import Projects from "./routes/Projects"
 import Contact from "./routes/Contact";
+import Footer from "./components/Footer"
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           </Switch>
         </div>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

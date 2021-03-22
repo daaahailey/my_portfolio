@@ -6,26 +6,35 @@ import Ecommerce from "../project-img/ecommerce.png";
 import Mybar from "../project-img/my_bar.png";
 import MyWeb from "../project-img/my_website.png";
 import Makeup from "../project-img/makeup_artist.png";
+import styled from "styled-components";
+
+const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 7% 10%;
+  paddingtop: 5%;
+  background-color: #e7e2ff;
+
+  @media (max-width: 1000px) {
+    margin: 7% 14%;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+`;
 
 const Projects = () => {
 
     return (
-      <div
-        className="project-container"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          margin: "7% 10%",
-          paddingTop: "5%",
-          backgroundColor: "#e7e2ff",
-        }}
-      >
-        <div className="projects" style={{ margin: "0 auto", width: "74%" }}>
+      <ProjectContainer>
+        <div className="projects" style={{ margin: "0 auto", width: "80%" }}>
           <h1 style={{ fontSize: "2.5em", textAlign: "left" }}>Projects</h1>
         </div>
         <div
           className="project-cards-container"
-          style={{ width: "74%", margin: "0 auto", textAlign: "left" }}
+          style={{ width: "80%", margin: "0 auto", textAlign: "left" }}
         >
           <ProjectCard
             title="Makeup Artist's Website"
@@ -90,7 +99,7 @@ const Projects = () => {
             code={"https://github.com/daaahailey/Calculator"}
           />
         </div>
-      </div>
+      </ProjectContainer>
     );
 }
 

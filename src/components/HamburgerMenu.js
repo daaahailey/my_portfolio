@@ -3,36 +3,16 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import gsap from "gsap";
 
-// import { createGlobalStyle } from "styled-components";
 
-// const GlobalStyles = createGlobalStyle`
-//   @import url('https://fonts.googleapis.com/css2?family=Montserrat');
-  
-// a {
-//     font-family: 'Montserrat', sans-serif;
-//     font-weight: 800;
-//   }
-
-// `;
-
-// const Container = styled.div`
-//     width: 1280px;
-//     min-width: 1280px;
-//     margin: 0 auto;
-// `
-
-// const Wrapper = styled.div`
-//     padding: 0 48px;
-// `
 
 const HamDiv = styled.div`
+  position: fixed;
+  z-index: 2;
   display: none;
-  z-index; 9;
   top: 0;
   bottom 0;
   left: 0;
   right: 0;
-  position: fixed;
   height: 100%;
   width: 100%;
 `;
@@ -57,7 +37,6 @@ const MenuLayer = styled.div`
 `;
 
 const HamMenuList = styled.ul`
-  padding: 0,
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -66,22 +45,34 @@ const HamMenuList = styled.ul`
   position: fixed;
   width: 100%;
   height: 100%;
+  padding: 0;
 `;
 
 const StyledLink = styled(NavLink)`
-  // list-style: none;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat");
   text-decoration: none;
   margin: 4% 10%;
   color: white;
-  font-size: 6rem;
-  // font-weight: 700;
+  font-size: 6em;
   height: 135px;
-  width: 700px;
+  // width: 700px;
   text-transform: uppercase;
   overflow: hidden;
   position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
   &:hover {
     color: #46fff6;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 5em;
+    height: 100px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2.8em;
+    height: 80px;
   }
 `;
 
@@ -96,6 +87,7 @@ const HamburgerMenu = ({ state }) => {
   let menu3 = useRef(null);
   let menu4 = useRef(null);
 
+  
   useEffect(() => {
     if (state.clicked === false) {
       // close menu
@@ -178,14 +170,17 @@ const HamburgerMenu = ({ state }) => {
         <div className="container">
           <nav>
             <HamMenuList>
-              {/* <GlobalStyles /> */}
+              {/* <GlobalStyles/> */}
               <StyledLink ref={(el) => (menu1 = el)} to="/my_portfolio/">
                 Home
               </StyledLink>
               <StyledLink ref={(el) => (menu2 = el)} to="/my_portfolio/about">
                 About
               </StyledLink>
-              <StyledLink ref={(el) => (menu3 = el)} to="/my_portfolio/projects">
+              <StyledLink
+                ref={(el) => (menu3 = el)}
+                to="/my_portfolio/projects"
+              >
                 Projects
               </StyledLink>
               <StyledLink ref={(el) => (menu4 = el)} to="/my_portfolio/contact">

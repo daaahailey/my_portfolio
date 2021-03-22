@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./Main.css";
 
 const Main = () => {
@@ -21,9 +22,13 @@ const Main = () => {
           </div>
           <div className="btn-container">
             <Link to="/my_portfolio/projects">
-              <button>View Projects</button>
+              <button className="main-btns">View Projects</button>
             </Link>
-            <button><a className="btnForEmail" href={`mailto:daaahailey@gmail.com`}>Get In Touch</a></button>
+            <button className="main-btns">
+              <a className="btnForEmail" href={`mailto:daaahailey@gmail.com`}>
+                Get In Touch
+              </a>
+            </button>
           </div>
         </div>
       </div>

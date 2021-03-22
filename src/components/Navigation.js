@@ -6,12 +6,28 @@ import logo from "../img/logo.png";
 import "./Navigation.css";
 
 
+const NavContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 40px;
+  padding: 0;
+  align-items: center;
+
+  @media (max-width: 480px) {
+    margin: 2% 5%;
+  }
+`;
 
 const MenuBtn = styled.button`
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat");
+  font-family: "Montserrat", sans-serif;
   position: fixed;
-  top: 10px;
-  right: 5px;
+  font-weight: 600;
+  top: 15px;
+  right: 25px;
+  width: 100px;
   margin: 0;
+  padding: 0;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -20,10 +36,15 @@ const MenuBtn = styled.button`
   font-size: 1.8em;
   color: black;
   box-shadow: none;
-  z-index: 1;
+  z-index: 5;
 
   @media (min-width: 900px) {
     display: none;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.4em;
+    width: 78px;
+}
   }
 
   &:hover {
@@ -55,7 +76,8 @@ const Navigation = ({ history }) => {
   });
   // state for disabled button 
   const [disabled, setDisabled] = useState(false);
-  
+
+
   // use effect for page changes 
   useEffect(() => {
     history.listen(() => {
@@ -65,6 +87,8 @@ const Navigation = ({ history }) => {
       })
     })
   });
+
+  
 
   const handleMenu = () => {
     disableMenu();
@@ -102,8 +126,8 @@ const Navigation = ({ history }) => {
 
 
     return (
-      <div className="nav-div-container">
-        <div className="logo">
+      <NavContainer className="nav-div-container">
+        <div className="logo" style={{ margin: "0", padding: "0"}}>
           <NavLink to="/my_portfolio/">
             <img className="logo-img" src={logo} alt="logo" />
           </NavLink>
@@ -145,7 +169,7 @@ const Navigation = ({ history }) => {
             Contact <span className="hover-line"></span>
           </NavLink>
         </NavMenu>
-      </div>
+      </NavContainer>
     );
 }
 
