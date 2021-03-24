@@ -38,14 +38,15 @@ const Projects = () => {
         >
           <ProjectCard
             title="Makeup Artist's Website"
-            description="Website built for a makeup artist. Showcasing her previous work for future clients."
-            tech="React, CSS"
+            description="A website that I am currently building for a makeup artist. Showcasing her previous work for future clients. Not available for live view yet. Coming soon!"
+            tech="React"
             img={Makeup}
+            code={"https://github.com/daaahailey/makeup_artist"}
           />
           <ProjectCard
             title="Portfolio"
-            description="My portfolio website. Yes, this is the website you are currently looking at. Since I've been learning React lately. I tried to code in React."
-            tech="React, CSS"
+            description="My portfolio website. Yes, this is the website you are currently looking at. Since I've been learning React, I wrote it with React. Also, I wanted to learn to use libraries, so tried to use Styled Components and GSAP for animation."
+            tech="React, CSS, Styled Components, GSAP"
             img={MyWeb}
             live={"https://daaahailey.github.io/my_portfolio"}
             code={"https://github.com/daaahailey/my_portfolio"}

@@ -37,7 +37,7 @@ const About = () => {
             London.
           </p>
           <p className="about-me-text">
-            My journey in programming has started since beginning of a pandemic
+            My journey in programming has started since beginning of pandemic
             last year. Before that, I worked in fashion for about 7 years after
             my graduation from fashion school. I never had an opportunity to
             rethink my career path while I was working. But, I've always wanted
@@ -99,7 +99,7 @@ const About = () => {
                 color: "#7f00e0",
               }}
             >
-              daaahailey@gamil.com
+              daaahailey@gmail.com
             </a>
           </p>
           <p className="about-me-text">
