@@ -42,7 +42,7 @@ const Footer = () => {
           <p style={{ display: "flex", justifyContent: "center" }}>
             Designed and built by{" "}
             <a
-              href="https://github.com/daaahailey/"
+              href="https://github.com/daaahailey/my_portfolio"
               target="_blank"
               rel="noreferrer"
               style={{

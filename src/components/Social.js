@@ -54,7 +54,7 @@ const Social = () => {
 
         <li>
           <a
-            href="https://www.linkedin.com/in/dahye-j-45a325193/"
+            href="https://www.linkedin.com/in/dahyeji/"
             target="_blank"
             rel="noreferrer"
           >

@@ -2,17 +2,17 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import Calculator from "../project-img/calculator.gif";
 import ToDo from "../project-img/to_do_list.gif";
-import Ecommerce from "../project-img/ecommerce.png";
-import Mybar from "../project-img/my_bar.png";
+import Ecommerce from "../project-img/ecom.gif";
+import Mybar from "../project-img/my-bar.gif";
 import MyWeb from "../project-img/my_website.png";
-import Makeup from "../project-img/makeup_artist.png";
+import Makeup from "../project-img/makeup.png";
 import styled from "styled-components";
 
 const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 7% 10%;
-  paddingtop: 5%;
+  // padding-top: 5%;
   // background-color: #e7e2ff;
 
   @media (max-width: 1000px) {
