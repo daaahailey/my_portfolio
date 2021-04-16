@@ -46,8 +46,8 @@ const Projects = () => {
         <ProjectCard
           title="D'witter"
           description="Created Twitter style sns app.
-            I am working on this to learn and understand google firebase!
-            User can 1. sign up with email or using google/github login. 2.update profile picture, display name 3. Dweet and edit the Dweet!"
+            I am working on this to learn and understand google firebase.
+            Functionalities I've built so far: User can 1. sign up with email or using google/github login. 2.update profile picture, display name 3. Dweet and edit or delete the Dweet that user left!"
           tech="React, Styled Components, Firebase"
           img={Dwitter}
           code={"https://github.com/daaahailey/sns"}
